@@ -1,0 +1,193 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+/* Navbar */
+nav {
+    background-color: #111;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    margin: 5px;
+    font-family: Georgia, serif;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.pesan, .tombol {
+    background-color: #ff9200;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+
+/* Bagian Utama */
+.utama {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.teks {
+    flex: 1;
+}
+
+.teks h1 {
+    color: #d99243;
+    font-size: 38px;
+}
+
+.teks p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.utama img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Judul Menu */
+.judul {
+    text-align: center;
+    color: #d99243;
+    font-size: 32px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin: 0 5%;
+}
+
+/* Kartu Menu */
+.katalog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 4%;
+}
+
+.menu {
+    background-color: #f8dfb2;
+    width: 31%;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.menu img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.menu h3 {
+    font-size: 20px;
+    color: #111;
+}
+
+.menu p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #171717;
+    color: white;
+    padding: 30px 5%;
+}
+
+.footer-isi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-isi div {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-isi h3 {
+    font-family: Georgia, serif;
+}
+
+.footer-isi p {
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #777;
+    padding-top: 20px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .link {
+        text-align: center;
+    }
+
+    .link a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 13px;
+    }
+
+    .utama {
+        flex-direction: column;
+        padding: 25px 5%;
+    }
+
+    .teks h1 {
+        font-size: 30px;
+    }
+
+    .utama img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu img {
+        height: 200px;
+    }
+
+    .footer-isi {
+        flex-direction: column;
+    }
+}
